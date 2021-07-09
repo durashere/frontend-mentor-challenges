@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [SOLUTION_URL](https://github.com/durashere/frontend-mentor-challenges/tree/main/stats-preview-card-component)
-- Live Site URL: [DEMO_URL](https://durashere.github.io/frontend-mentor-challenges/stats-preview-card-component/index.html)
+- Solution URL: [https://github.com/durashere/frontend-mentor-challenges/tree/main/stats-preview-card-component](https://github.com/durashere/frontend-mentor-challenges/tree/main/stats-preview-card-component)
+- Live Site URL: [https://durashere.github.io/frontend-mentor-challenges/stats-preview-card-component/index.html](https://durashere.github.io/frontend-mentor-challenges/stats-preview-card-component/index.html)
 
 ## Built with
 
