@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --background-main-color: hsl(233, 47%, 7%);
+  --background-card-color: hsl(244, 38%, 16%);
+  --accent-color: hsl(277, 64%, 61%);
+  --white-color: hsl(0, 0%, 100%);
+  --description-color: hsla(0, 0%, 100%, 0.75);
+  --stat-name-color: hsla(0, 0%, 100%, 0.6);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white-color);
+}
+.attribution a {
+  color: var(--accent-color);
+}
+
+body {
+  background-color: var(--background-main-color);
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--background-card-color);
+  border-radius: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  height: 250px;
+  background-image: url(./images/image-header-mobile.jpg);
+  background-color: var(--accent-color);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.header {
+  color: var(--white-color);
+  margin: auto;
+}
+.header__highlight {
+  color: var(--accent-color);
+}
+
+.description {
+  color: var(--description-color);
+  margin: auto;
+  margin-top: 1rem;
+  line-height: 1.6rem;
+}
+
+.stats {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex;
+  gap: 1.4rem;
+}
+.stats__element {
+  font-weight: bold;
+}
+.stats__number {
+  font-size: 1.6rem;
+  color: var(--white-color);
+}
+.stats__name {
+  margin-top: 0.3rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: var(--stat-name-color);
+}
+
+@media all and (min-width: 425px) {
+  .stats {
+    flex-direction: row;
+    margin-top: 4rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+
+  .content {
+    width: 45%;
+    flex-direction: column;
+    text-align: start;
+    padding: 4rem;
+  }
+
+  .description {
+    margin-top: 2rem;
+  }
+
+  .stats {
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 4rem;
+  }
+  .stats__element {
+    margin-right: 3rem;
+  }
+
+  .photo {
+    width: 55%;
+    height: 100%;
+    background-image: url(./images/image-header-desktop.jpg);
+  }
+}
