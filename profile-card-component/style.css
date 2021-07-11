@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -32rem left -41rem, bottom -32rem right -41rem;
+  background-color: var(--dark-cyan);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.attribution {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  width: 100%;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px hsla(0, 0%, 0%, 0.25);
+}
+
+.card__photo--wrapper {
+  height: 8rem;
+  background-image: url(./images/bg-pattern-card.svg);
+  margin-bottom: 4rem;
+}
+.card__photo {
+  border-radius: 99rem;
+  box-shadow: 0 0 0 0.3rem white;
+  transform: translateY(5.4rem);
+}
+
+.card__name {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1rem;
+  word-spacing: 0.1rem;
+}
+
+.card__age {
+  color: var(--dark-gray);
+  font-weight: normal;
+}
+
+.card__location {
+  color: var(--dark-gray);
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.card__stats {
+  margin-top: 1.4rem;
+  border-top: solid;
+  border-top-width: 1px;
+  border-top-color: hsl(0, 0%, 85%);
+  display: flex;
+  justify-content: space-around;
+  padding: 1.4rem;
+}
+
+.stat__number {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: bold;
+  line-height: 1.6rem;
+}
+.stat__heading {
+  color: var(--dark-gray);
+  font-weight: normal;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+}
+
+@media screen and (min-width: 375px) {
+  .card {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-position: top -25rem left -15rem, bottom -30rem right -15rem;
+  }
+}
