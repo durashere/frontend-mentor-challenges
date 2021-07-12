@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [[SOLUTION_URL](https://github.com/durashere/frontend-mentor-challenges/tree/main/social-proof-section)](https://github.com/durashere/frontend-mentor-challenges/tree/main/social-proof-section)
-- Live Site URL: [[DEMO_URL](https://durashere.github.io/frontend-mentor-challenges/social-proof-section/index.html)](https://durashere.github.io/frontend-mentor-challenges/social-proof-section/index.html)
+- Solution URL: [(https://github.com/durashere/frontend-mentor-challenges/tree/main/social-proof-section)](https://github.com/durashere/frontend-mentor-challenges/tree/main/social-proof-section)
+- Live Site URL: [(https://durashere.github.io/frontend-mentor-challenges/social-proof-section/index.html)](https://durashere.github.io/frontend-mentor-challenges/social-proof-section/index.html)
 
 ## Built with
 
