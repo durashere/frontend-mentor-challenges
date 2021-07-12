@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+html {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: #e5eff5;
+}
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  margin: 2rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 680px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    display: grid;
+    grid-template-areas: "community community" "subscription about";
+  }
+}
+
+.community {
+  background-color: white;
+  padding: 2rem;
+  grid-area: community;
+}
+.community__heading {
+  color: #2ab2af;
+  font-weight: 700;
+}
+.community__return {
+  color: #c0df34;
+}
+.community__description {
+  line-height: 1.6rem;
+  color: #98a6bd;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 768px) {
+  .community__heading {
+    font-size: 1.8rem;
+  }
+  .community__return {
+    margin-top: 2rem;
+  }
+}
+
+.subscription {
+  background-color: #2ab2af;
+  padding: 2rem;
+  grid-area: subscription;
+}
+.subscription__heading {
+  color: white;
+}
+.subscription__price {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.subscription__price span {
+  margin-left: 0.6rem;
+  font-size: 1rem;
+  color: #e5eff5;
+}
+.subscription__description {
+  color: #e5eff5;
+}
+.subscription__button {
+  width: 100%;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+  background-color: #c0df34;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: ease-in-out 150ms;
+}
+.subscription__button:hover {
+  transform: translateY(-0.2rem) scale(102%);
+}
+
+.about {
+  background-color: #4bbebc;
+  padding: 2rem;
+  grid-area: about;
+}
+.about__heading {
+  color: white;
+}
+.about__list {
+  padding: 0;
+  font-size: 0.9rem;
+  list-style-type: none;
+  color: #e5eff5;
+}
+.about__list li {
+  margin-top: 0.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
