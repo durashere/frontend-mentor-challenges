@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 :root {
-  --dark-cyan: hsl(185, 75%, 39%);
-  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
-  --dark-grayish-blue: hsl(227, 10%, 46%);
-  --dark-gray: hsl(0, 0%, 59%);
+  --dark-cyan-color: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue-color: hsl(229, 23%, 23%);
+  --dark-grayish-blue-color: hsl(227, 10%, 46%);
+  --dark-gray-color: hsl(0, 0%, 59%);
 }
 
 * {
@@ -22,7 +22,7 @@ body {
     url(./images/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top -32rem left -41rem, bottom -32rem right -41rem;
-  background-color: var(--dark-cyan);
+  background-color: var(--dark-cyan-color);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@ body {
 }
 
 .attribution {
-  color: var(--very-dark-desaturated-blue);
+  color: var(--very-dark-desaturated-blue-color);
   font-size: 11px;
   text-align: center;
 }
@@ -62,18 +62,18 @@ body {
 }
 
 .card__name {
-  color: var(--very-dark-desaturated-blue);
+  color: var(--very-dark-desaturated-blue-color);
   font-size: 1rem;
   word-spacing: 0.1rem;
 }
 
 .card__age {
-  color: var(--dark-gray);
+  color: var(--dark-gray-color);
   font-weight: normal;
 }
 
 .card__location {
-  color: var(--dark-gray);
+  color: var(--dark-gray-color);
   font-weight: normal;
   font-size: 0.9rem;
 }
@@ -89,12 +89,12 @@ body {
 }
 
 .stat__number {
-  color: var(--very-dark-desaturated-blue);
+  color: var(--very-dark-desaturated-blue-color);
   font-weight: bold;
   line-height: 1.6rem;
 }
 .stat__heading {
-  color: var(--dark-gray);
+  color: var(--dark-gray-color);
   font-weight: normal;
   font-size: 0.7rem;
   letter-spacing: 0.05rem;
