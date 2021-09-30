@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --bright-blue: hsl(245, 75%, 52%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  align-items: center;
+  background-color: var(--pale-blue);
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.component {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: clamp(320px, 90vw, 400px);
+}
+
+.header__image {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.content__heading {
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin: 0;
+}
+
+.content__text {
+  color: var(--desaturated-blue);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card {
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.card__info {
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.card__info > h4 {
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin: 0;
+}
+
+.card__info > p {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+  margin-top: 0.25rem;
+  margin: 0;
+}
+
+.card__link {
+  font-weight: 700;
+  margin-left: auto;
+  transition: all 0.3s ease-in-out;
+}
+.card__link:hover {
+  color: var(--bright-blue);
+  opacity: 75%;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.button--primary {
+  background-color: var(--bright-blue);
+  box-shadow: 0 1.5rem 1.5rem hsl(245, 75%, 52%, 0.25);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.button--primary:hover {
+  opacity: 75%;
+}
+
+.button--secondary {
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  transition: all 0.3s ease-in-out;
+}
+.button--secondary:hover {
+  color: var(--dark-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  padding: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+}
