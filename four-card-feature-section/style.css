@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+
+  --color-very-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5.4rem auto;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-very-light-gray);
+}
+
+.heading {
+  width: 20rem;
+  text-align: center;
+  margin: auto;
+}
+
+.heading h2 {
+  line-height: 2.2rem;
+  color: var(--color-very-dark-blue);
+  font-weight: 200;
+}
+
+.heading span {
+  color: var(--color-very-dark-blue);
+  font-weight: 600;
+  display: inline-block;
+}
+
+.heading p {
+  margin-top: 1rem;
+  font-weight: 200;
+  line-height: 1.5rem;
+  color: var(--color-grayish-blue);
+}
+
+.features {
+  margin-top: 3.2rem;
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.features > div {
+  padding: 1.5rem;
+  width: 20rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05),
+    0px 24px 24px -24px rgba(84, 151, 243, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.features h3 {
+  color: var(--color-very-dark-blue);
+}
+
+.features p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 200;
+  color: var(--color-grayish-blue);
+}
+
+.features img {
+  margin-top: 1.5rem;
+  align-self: flex-end;
+}
+
+.features > :nth-child(1) {
+  border-top: 0.25rem solid var(--color-cyan);
+}
+.features > :nth-child(2) {
+  border-top: 0.25rem solid var(--color-red);
+}
+.features > :nth-child(3) {
+  border-top: 0.25rem solid var(--color-orange);
+}
+.features > :nth-child(4) {
+  border-top: 0.25rem solid var(--color-blue);
+}
+
+.attribution {
+  margin-top: 3rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    width: 80%;
+  }
+
+  .heading {
+    width: 34rem;
+  }
+
+  .heading h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .features {
+    justify-items: center;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas:
+      ". team-builder ."
+      "supervisor team-builder calculator"
+      "supervisor karma calculator"
+      ". karma .";
+  }
+
+  .features > :nth-child(1) {
+    grid-area: supervisor;
+  }
+  .features > :nth-child(2) {
+    grid-area: team-builder;
+  }
+  .features > :nth-child(3) {
+    grid-area: karma;
+  }
+  .features > :nth-child(4) {
+    grid-area: calculator;
+  }
+}
